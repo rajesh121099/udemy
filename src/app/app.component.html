@@ -1,0 +1,27 @@
+<!-- <h1> angular</h1>
+<courses></courses>
+
+<div (click)=" onDivclicked()">
+    <button (click)="onSave($event)">save</button>
+    <div>
+
+        <input [(ngModel)]="email" (keyup.enter)="onKeyUp()" /><br> {{col.title|uppercase}}
+
+        <br> {{col.students|number}}
+        <br> {{col.rating|number:'1.1-1'}}
+        <br> {{col.price|currency:'INR'}}
+        <br> {{col.releaseDate|date:'shortDate'}}
+        <br> {{text|summary }} -->
+
+
+<div *ngIf="courses.length > 0; then courselist else noCourse ">
+
+</div>
+
+<ng-template #courselist>
+    List of course
+</ng-template>
+
+<ng-template #noCourse>
+    no courses yet
+</ng-template>
