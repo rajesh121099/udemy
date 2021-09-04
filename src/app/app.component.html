@@ -14,7 +14,7 @@
         <br> {{text|summary }} -->
 
 
-<div *ngIf="courses.length > 0; then courselist else noCourse ">
+<!-- <div *ngIf="courses.length > 0; then courselist else noCourse ">
 
 </div>
 
@@ -24,4 +24,31 @@
 
 <ng-template #noCourse>
     no courses yet
-</ng-template>
+</ng-template> -->
+
+<!-- <ul class="nav nav-pills">
+    <button class="btn btn-primary"><li [class.active]="viewMode == 'map'"><a (click)="viewMode = 'map'">Map view</a></li></button>
+    <button><li [class.active]="viewMode == 'list'"><a (click)="viewMode = 'list'"> list view</a></li></button> 
+    
+</ul>
+<div [ngSwitch]="viewMode">
+<div *ngSwitchCase="'map'">map view</div>
+<div *ngSwitchCase="'list'"> list view</div> 
+<div *ngSwitchDefault>Otherwise</div>
+</div> -->
+
+<!-- <button (click)="onAdd()">Add</button>
+<ul>
+    <li *ngFor="let course of courses; even as isEven">
+      {{course.name}} <span *ngIf="isEven"> (Even)</span>
+      <button (click)="onchange(course)">Remove</button>
+    </li>
+</ul> -->
+
+<button (click)="loadCrouses()">Add</button>
+<ul>
+    <li *ngFor="let course of courses; trackBy:trackCourse">
+      {{course.name}} 
+     
+    </li>
+</ul>

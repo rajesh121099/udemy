@@ -8,11 +8,35 @@ import { CoursesService } from './courses.service';
 })
 export class AppComponent {
 
-courses = [];
+courses:any ;
 
-
+loadCrouses(){
+this.courses =[
+  {id:1, name:'course'},
+  {id:2, name:'course 2'},
+  {id:3, name:'course 3'},
+];
+}
+trackCourse(index: any,course: any){
+ return course ? course.id : undefined; 
+}
 
 }
+// onAdd() {
+//   this.courses.push({id:4, name:'course 4'});
+// }
+// onchange(course: any){
+//   course.name='UPDATED'; 
+// }
+// onRemove(_course: any){
+//   let index=this.courses.indexOf(_course);
+//   this.courses.splice(index,1);
+// }
+
+
+
+  // viewMode ='';
+// courses = [1,2];
 //   title = 'udemyproject';
 
     // post = {
