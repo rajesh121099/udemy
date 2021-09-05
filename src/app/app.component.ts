@@ -7,21 +7,30 @@ import { CoursesService } from './courses.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-courses:any ;
-
-loadCrouses(){
-this.courses =[
-  {id:1, name:'course'},
-  {id:2, name:'course 2'},
-  {id:3, name:'course 3'},
-];
-}
-trackCourse(index: any,course: any){
- return course ? course.id : undefined; 
-}
+  task ={
+    title: 'Review applications',
+    assignee:{
+      name:null
+    }
+  }
 
 }
+
+// canSave = false;
+
+// courses:any ;
+
+// loadCrouses(){
+// this.courses =[
+//   {id:1, name:'course'},
+//   {id:2, name:'course 2'},
+//   {id:3, name:'course 3'},
+// ];
+// }
+// trackCourse(index: any,course: any){
+//  return course ? course.id : undefined; 
+// }
+
 // onAdd() {
 //   this.courses.push({id:4, name:'course 4'});
 // }

@@ -9,10 +9,11 @@ import { CourseComponent } from './course/course.component';
 import { CoursesService } from './courses.service';
 import { FormsModule } from '@angular/forms';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { InputFormatDirective } from './input-format.directive';
 
 @NgModule({
   declarations: [
-    AppComponent,CoursesComponent, CourseComponent,SummaryPipe, FavoriteComponent
+    AppComponent,CoursesComponent, CourseComponent,SummaryPipe, FavoriteComponent, InputFormatDirective
   ],
   imports: [
     BrowserModule,

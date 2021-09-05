@@ -45,10 +45,21 @@
     </li>
 </ul> -->
 
-<button (click)="loadCrouses()">Add</button>
+<!-- <button (click)="loadCrouses()">Add</button>
 <ul>
     <li *ngFor="let course of courses; trackBy:trackCourse">
       {{course.name}} 
      
     </li>
-</ul>
+</ul> -->
+
+<!-- <button
+[style.backgroundColor]="canSave ? 'blue' : 'gray'"
+[style.color]="canSave ? 'white': 'black'"
+[style.fontWeight]="canSave ? 'bold':'normal'" >
+  Save
+</button> -->
+
+<!-- <span>{{ task.assignee?.name}}</span> -->
+
+<input type="text" [appInputFormat]="'uppercase'">
