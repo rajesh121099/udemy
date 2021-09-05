@@ -10,10 +10,11 @@ import { CoursesService } from './courses.service';
 import { FormsModule } from '@angular/forms';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { InputFormatDirective } from './input-format.directive';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent,CoursesComponent, CourseComponent,SummaryPipe, FavoriteComponent, InputFormatDirective
+    AppComponent,CoursesComponent, CourseComponent,SummaryPipe, FavoriteComponent, InputFormatDirective, ContactFormComponent
   ],
   imports: [
     BrowserModule,
