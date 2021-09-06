@@ -1,0 +1,14 @@
+<form [formGroup]="form">
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input formContolName="username" id="username" type="text" class="form-control">
+        <div [ngClass]="{'is-valid':form.get('username')?.touched && form.get('username')?.invalid}" class="alert alert-danger">
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input formContolName="password" id="password" type="text" class="form-control">
+    </div>
+    <button class="btn btn-primary" type="submit">Sign Up</button>
+</form>

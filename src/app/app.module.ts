@@ -7,20 +7,26 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
 import { CourseComponent } from './course/course.component';
 import { CoursesService } from './courses.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { InputFormatDirective } from './input-format.directive';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { SignupFormComponent } from './signup-form/signup-form.component';
+import { PostComponent } from './post/post.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
-    AppComponent,CoursesComponent, CourseComponent,SummaryPipe, FavoriteComponent, InputFormatDirective, ContactFormComponent
+    AppComponent,CoursesComponent, CourseComponent,SummaryPipe, FavoriteComponent, InputFormatDirective, ContactFormComponent, SignupFormComponent, PostComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule
+    AppRoutingModule,FormsModule,ReactiveFormsModule,HttpClientModule
+
   ],
   providers: [
+   
     CoursesService
   ],
   
