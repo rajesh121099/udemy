@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class PostComponent implements OnInit {
 
   constructor(http: HttpClient) { 
-    http.get('https://jsonplaceholder.typicode.com/posts')
+    http.get('https://jsonplaceholder.typicode.com/photos')
     .subscribe( response =>{
       console.log(response);
     })
