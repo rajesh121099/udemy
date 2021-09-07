@@ -52,7 +52,7 @@ export class AppComponent {
     //     title:"list of courses",
     //     isFavorite: true
     // }
-
+  
 
 
 //     title = 'list of courses';

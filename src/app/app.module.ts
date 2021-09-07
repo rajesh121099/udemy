@@ -1,3 +1,4 @@
+import { PostService } from './services/post.service';
 import { SummaryPipe } from './summary.pipe';
   import {  NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,6 +17,7 @@ import { PostComponent } from './post/post.component';
 import { HttpClientModule } from '@angular/common/http';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,CoursesComponent, CourseComponent,SummaryPipe, FavoriteComponent, InputFormatDirective, ContactFormComponent, SignupFormComponent, PostComponent
@@ -26,7 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
 
   ],
   providers: [
-   
+    PostService,
     CoursesService
   ],
   
