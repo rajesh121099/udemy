@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import 'rxjs/add/operator/catch';
+// import 'rxjs/add/operator/catch';
 
 
 
@@ -29,12 +29,12 @@ export class PostService {
 
   deletePost(id: string | number){
    return this.http.delete(this.url + '/' + id)
-   .pipe(
-     catchError((error:Response) => {
-    if (error.status===404)
-    return Observable.throw(new NotFoundError(error));
-  return Observable.throw(new AppError(error));
-  }));
+  //  .pipe(
+  //    catchError((error:Response) => {
+  //   if (error.status===404)
+  //   return Observable.throw(new NotFoundError(error));
+  // return Observable.throw(new AppError(error));
+  // }));
    
    }
 } 
